@@ -1,2 +1,2 @@
-Ini file di folder back-end update study case maksimal 3 hari sekali
+Ini file di folder back-end update study case maksimal 2 hari sekali
 
