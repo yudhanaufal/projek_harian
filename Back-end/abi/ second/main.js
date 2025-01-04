@@ -34,7 +34,7 @@ const body = document.body;
 // body.append(namaSaya);
 // body.append(namaKamu);
 
-// DATA SELECTOR
+// STUDY CASE DATA SELECTOR BUTTON
 const btn1 = document.getElementById("btn1");
 const btn3 = document.getElementById("btn3");
 const btn2 = document.querySelector(".btn2");
