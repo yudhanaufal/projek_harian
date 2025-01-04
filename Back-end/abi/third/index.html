@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Kalkulator Sederhana</title>
+    <style>
+      #inputArea {
+        display: none; /* Input area awalnya disembunyikan */
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>KALKULATOR SEDERHANA</h1>
+
+    <!-- Tombol untuk memilih bentuk -->
+    <button onclick="showInputLingkaran()">Lingkaran</button>
+    <button onclick="showInputSegitiga()">Segitiga</button>
+    <button onclick="showInputJajarGenjang()">Jajar Genjang</button>
+    <button onclick="showInputPersegiPanjang()">Persegi Panjang</button>
+
+    <!-- Area input yang akan muncul -->
+    <div id="inputArea">
+      <div id="dynamicInputs"></div>
+      <button onclick="hitung()">Hitung</button>
+    </div>
+
+    <!-- Hasil -->
+    <h2>Hasil: <span id="hasil"></span></h2>
+
+    <script src="main.js"></script>
+
+    <div id="inputGaji">
+      <label for="nama">Masukkan Nama:</label>
+      <input type="text" id="nama" />
+      <br />
+      <label for="harian">Masukkan Gaji per Hari:</label>
+      <input type="number" id="harian" />
+      <br />
+      <label for="hari">Masukkan Jumlah Hari Kerja:</label>
+      <input type="number" id="hari" />
+      <br />
+      <button onclick="gajian()">Hitung</button>
+    </div>
+
+    <!-- Hasil -->
+    <h2>Hasil:</h2>
+    <div id="total"></div>
+  </body>
+</html>
