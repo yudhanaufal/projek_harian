@@ -1,7 +1,6 @@
 // allert untuk poopup
 // alert("halo")
 
-// Console.log untuk berpindah halaman
 // console.log("hallo");
 
 // prompt untuk memunculkan poopup dan meminta menginput data
@@ -126,29 +125,10 @@
 // alert(`saldo akhir kamu adalah ${saldoAkhir}`);
 
 
+// STUDY KASUS GETDAY DI JAVASCRIPT DENGAN ARRAY
 
 let date = new Date().getDay();
 let hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
 let harike = hari[date];
 console.log(`hari ini hari ${harike}`);
 
-////// ARRAY ///
-
-// let namaGuru = ["yazid", "puter", "titi"];
-
-// alert(namaGuru[0]); // panggil urutan 1 dimulai dari 0 dst
-
-// namaGuru.push("ab", "pirta"); // push untuk menambahkan array
-// alert(namaGuru);
-
-// namaGuru.shift(); // shift untuk menghapus urutan 1
-// namaGuru.pop();  // pop untuk menghapus urutan terakhir
-// alert(namaGuru);
-
-// let namaGuru = [];
-
-// namaGuru[0] = "lala";
-// namaGuru[1] = "lali";
-// namaGuru[2] = "lalu";
-
-// alert(namaGuru);
