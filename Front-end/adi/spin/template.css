@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+h1 {
+    margin: 0; /* Menghapus margin default */
+    font-size: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@keyframes spinAndTransform {
+    0% {
+        transform: rotate(0deg) scale(1); /* Kotak biasa */
+        border-radius: 0%; /* Radius Kotak */
+    }
+    50% {
+        transform: rotate(180deg) scale(1.7); /* Bulat dan zoom in */
+        border-radius: 50%; /* Dari kotak menjadi bulat */
+    }
+    100% {
+        transform: rotate(360deg) scale(1); /* Kembali ke kotak biasa */
+        border-radius: 0%; /* Kembali ke kotak */
+    }
+}
+
+
+.blue-box {
+    background-color: blue;
+    color: white; /* Warna teks putih */
+    padding: 20px; /* Memberikan jarak di dalam kotak */
+    text-align: center; /* Agar teks di tengah */
+    width: 300px; /* Atur lebar kotak */
+    height: 100px; /* Atur tinggi kotak */
+    display: flex; /* Menggunakan Flexbox */
+    justify-content: center; 
+    align-items: center; 
+    animation: spinAndTransform 2s linear; /* Menambahkan animasi spin dan transform */
+}
