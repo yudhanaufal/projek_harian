@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50; /* Warna latar belakang header */
+    padding: 20px; /* Posisi teks header */
+    text-align: center; /* Pusatkan teks */
+}
+
+.header-title {
+    color: white; /* Warna teks */
+    font-size: 2em; /* Ukuran font title */
+    transition: color 0.3s; /* Waktu transisi hover */
+}
+
+nav {
+    margin-top: 15px; /* Jarak antara judul dan menu */
+}
+
+.menu {
+    list-style-type: none; /* Menghilangkan bullet point */
+    padding: 0; /* Menghilangkan padding */
+}
+
+.menu li {
+    display: inline-block; /* Menampilkan sub menu secara horizontal */
+    margin: 0 15px; /* Jarak antar item menu */
+    position: relative; /* Posisi submenu */
+}
+
+.menu a {
+    text-decoration: none; /* Menghilangkan garis  */
+    color: white; /* Warna teks menu */
+    font-size: 1.2em; /* Ukuran font link */
+    transition: color 0.3s; /* Transisi untuk efek hover */
+}
+
+.menu a:hover {
+    color: #FFD700; /* Warna teks saat hover */
+}
+
+.submenu {
+    border-radius: 5px; /* Radius sudut submenu */
+    display: none; /* Sembunyikan submenu secara default */
+    position: absolute; /* Posisi absolut untuk submenu */
+    background-color: grey; /* Warna latar belakang submenu */
+    list-style-type: none; /* Menghilangkan bullet point */
+    padding: 10px 0; /* Padding untuk submenu */
+    margin: 0; /* Menghilangkan margin */
+    z-index: 1; /* Submenu berada di atas */
+    opacity: 0; /* Mulai dengan transparansi 0 */
+    transform: translateY(-10px); /* Geser sedikit ke atas */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transisi untuk efek muncul */
+}
+
+.menu li:hover .submenu {
+    display: block; /* Tampilkan submenu saat hover pada item menu */
+    opacity: 1; /* Ubah transparansi menjadi 1 */
+    transform: translateY(0); /* Kembalikan posisi ke normal */
+}
+
+.menu li:hover .submenu {
+    animation: slideDown 0.3s forwards; /* Menjalankan animasi slideDown */
+}
+
+.submenu li {
+    padding: 5px 15px; /* Padding untuk item submenu */
+}
+
+.submenu a {
+    color: white; /* Warna teks saat submenu */
+    font-size: 1em; /* Ukuran font submenu */
+    display: block; /* Membuat link submenu menjadi blok */
+}
+
+.submenu a:hover {
+    background-color: #FFD700; /* Warna latar belakang submenu saat hover */
+    color: black; /* Warna teks submenu saat hover */
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0; 
+        transform: translateY(-10px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
