@@ -87,3 +87,45 @@ if (isQualified) {
   console.log("Jelas ra lolos");
 }
 
+/* 
+    TERNARY OPERATOR
+
+    Akar kata latin Ternary berarti "3", dan merupakan satu-satunya operator JavaScript yang menggunakan tiga operan.
+
+    - Suatu kondisi diikuti oleh tanda tanya (?)
+    - Ekspresi yang akan dieksekusi jika kondisinya benar diikuti oleh titik dua ( :)
+    - Ekspresi yang akan dieksekusi jika kondisinya salah.
+    - Operasi terner sangat bagus untuk kondisional baris tunggal yang kecil 
+    
+    const bobbyAge = 17
+    const legalAge = 18
+    
+    const message = bobbyAge >= legalAge ? 'Bobby is an adult' : 'Bobby is not an adult'
+    
+    console.log(message)
+
+
+*/
+
+// STUDY KASUS //
+
+/* Sistem Pemesanan Tiket Bioskop
+Anda sedang membuat sistem pemesanan tiket bioskop online. Harga tiket bervariasi berdasarkan usia pelanggan:
+
+Jika usia pelanggan di atas atau sama dengan 18 tahun, mereka dikenakan harga tiket dewasa (Rp50.000).
+Jika usia pelanggan di bawah 18 tahun, mereka dikenakan harga tiket anak-anak (Rp30.000).
+Untuk menentukan harga tiket, Anda ingin menggunakan operator ternary agar kode lebih singkat dan mudah dibaca.
+
+*/
+
+const umur = 20;
+const hargaTiketAnak = 30000;
+const hargaTiketDewasa = 50000;
+
+const tiketPrice = umur >= 18 ? hargaTiketDewasa : hargaTiketAnak;
+const message =
+  umur >= 18 ? "anda dikenakan harga Dewasa" : "anda dikenakan harga Anak";
+
+console.log(`harga tiket anda: ${tiketPrice}`);
+console.log(message);
+
