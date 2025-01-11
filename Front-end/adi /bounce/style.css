@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    background: purple;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+h1 {
+    display: flex; 
+}
+
+span {
+    position: relative;
+    font-family: sans-serif;
+    color: white;
+    display: inline-block;
+    font-size: 5rem;
+    text-shadow: 2px 2px 0 black; 
+    animation: bounce 0.5s ease forwards; 
+    animation-iteration-count: 2;
+}
+
+h1 span:nth-child(1) {
+    animation-delay: 0s; 
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.1s; 
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.2s; 
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.3s; 
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        top: 0; 
+    }
+    50% {
+        top: -30px; 
+    }
+}
