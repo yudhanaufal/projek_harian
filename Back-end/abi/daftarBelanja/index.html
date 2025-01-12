@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar Belanja</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Daftar Belanja</h1>
+    <form id="shopping-form">
+      <input type="text" id="item-input" placeholder="Masukkan item" required />
+      <input
+        type="number"
+        id="price-input"
+        placeholder="Masukkan harga"
+        min="0"
+        required
+      />
+      <button type="submit">Tambah</button>
+    </form>
+    <ul id="shopping-list"></ul>
+    <div>Total Belanja: RP <span id="total-price">0</span></div>
+    <script src="main.js"></script>
+  </body>
+</html>
